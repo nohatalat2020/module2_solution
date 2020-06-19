@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+body {
+font-family: 'Lora', serif;
+}
+
+
+.menu{
+  width:100%;
+  height:100%;
+  margin:30px 50px;
+    
+}
+
+.menu h1{
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize
+}
+
+
+ .chicken,.beef,.sushi{
+    width:30%;
+    height: auto;
+    float:left;
+    margin-top: 50px;
+    margin-right:10px ;
+    margin-left: 15px;
+    padding: 5px;
+    overflow: auto;
+    position: relative;
+    border:1px solid #000;
+    background-color: #a6dcef
+
+
+}
+
+.chicken h3,.beef h3,.sushi h3{
+    float: right;
+    border:1px solid #000;
+    width: 120px;
+    padding: 5px;
+    margin: 0;
+    position: absolute;
+    top:0;
+    right:0;
+    text-align: center;
+    
+    
+}
+
+.chicken p,.beef p,.sushi p{
+    clear:both;
+    margin-top:40px;
+    padding: 5px;
+    text-align: center;
+    font-size: 75%
+
+}
+
+
+.chicken h3{
+    color:black;
+    background-color: #e2979c
+}
+
+.beef h3{
+    color:whitesmoke;
+    background-color: #e7305b
+}
+
+.sushi h3{
+    color:black;
+    background-color: #9bdeac
+}
+
+
+@media(min-width:768px)and (max-width:991px){
+    
+    .chicken,.beef{
+        width:45%
+    }
+    
+    .sushi{
+        width:95%
+    }
+}
+
+@media(max-width:767px){
+    .chicken,.beef,.sushi{
+        width:95%
+    }
+}
